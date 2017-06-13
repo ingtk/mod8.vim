@@ -23,9 +23,11 @@ let s:gui06 = "dfe1e8"
 let s:gui07 = "eff1f5"
 let s:gui08 = "bf616a"
 let s:gui09 = "d08770"
-let s:gui0A = "ebcb8b"
+"let s:gui0A = "ebcb8b"
+let s:gui0A = "96b5b4"
 let s:gui0B = "a3be8c"
-let s:gui0C = "96b5b4"
+"let s:gui0C = "96b5b4"
+let s:gui0C = "ebcb8b"
 let s:gui0D = "8fa1b3"
 let s:gui0E = "b48ead"
 let s:gui0F = "ab7967"
@@ -33,20 +35,22 @@ let s:gui0F = "ab7967"
 " Terminal color definitions
 " This is where we change certain definitions to free up colors
 let s:cterm00 = "00"        " unused
-let s:cterm03 = "07"
-let s:cterm05 = "07"        " unused
-let s:cterm07 = "15"        " unused
-let s:cterm08 = "01"
-let s:cterm0A = "03"
-let s:cterm0B = "02"
-let s:cterm0C = "06"
-let s:cterm0D = "04"
-let s:cterm0E = "05"
 let s:cterm01 = "00"
 let s:cterm02 = "08"
+let s:cterm03 = "07"
 let s:cterm04 = "15"
+let s:cterm05 = "07"        " unused
 let s:cterm06 = "13"        " unused
+let s:cterm07 = "15"        " unused
+let s:cterm08 = "01"
 let s:cterm09 = "09"
+" let s:cterm0A = "03"
+let s:cterm0A = "06"
+let s:cterm0B = "02"
+" let s:cterm0C = "06"
+let s:cterm0C = "03"
+let s:cterm0D = "04"
+let s:cterm0E = "05"
 let s:cterm0F = "14"
 
 " Highlighting function
@@ -99,7 +103,7 @@ call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "")
 call <sid>hi("Normal",        s:gui05, s:gui00, "", "", "")
 call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "")
-call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
+call <sid>hi("SpecialKey",    s:gui03, "", s:cterm02, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none")
 call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none")
 call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none")
@@ -116,7 +120,8 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none")
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "")
 call <sid>hi("Character",    s:gui08, "", s:cterm08, "", "")
-call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "")
+"call <sid>hi("Comment",      s:gui03, "", s:cterm0, "", "")
+call <sid>hi("Comment",      s:gui03, "", s:cterm02, "", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none")
